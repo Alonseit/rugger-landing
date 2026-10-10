@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugger Match | Analítica de Datos para Rugby Amateur</title>
+    <meta name="description" content="Captura de datos en tiempo real y análisis automatizado post-partido para equipos de rugby amateur y de formación. Únete a la lista de espera.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rugger: {
+                            dark: '#111827',
+                            green: '#004d40',
+                            lightgreen: '#00bfa5',
+                            accent: '#ff3d00'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Oswald', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap');
+        
+        .logo-img {
+            image-rendering: -webkit-optimize-contrast;
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased selection:bg-rugger-lightgreen selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center font-display font-bold text-xl text-rugger-dark tracking-wide">
+                    RUGGER MATCH
+                </div>
+                <div>
+                    <a href="#registro" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-bold rounded-md shadow-sm text-white bg-rugger-green hover:bg-rugger-lightgreen focus:outline-none transition-colors">
+                        Acceso Anticipado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-16">
+        <div class="bg-white text-gray-900 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
+                <div class="text-center max-w-3xl mx-auto">
+                    
+                    <img class="h-32 sm:h-40 md:h-48 w-auto mx-auto mb-8 logo-img transition-transform hover:scale-105 duration-300" src="rugger-match.png" alt="Rugger Match Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x100/004d40/ffffff?text=RUGGER+MATCH';">
+                    
+                    <span class="inline-block py-1 px-3 rounded-full bg-rugger-green/10 text-rugger-green text-sm font-semibold tracking-wider uppercase mb-6 border border-rugger-green/20">
+                        Rugby Amateur y Cantera
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight mb-8">
+                        La inteligencia del rugby profesional, <span class="text-rugger-lightgreen">al alcance de todos.</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 font-light leading-relaxed">
+                        Captura de datos en tiempo real y análisis post-partido automatizado. Toma decisiones estratégicas objetivas sin los costes prohibitivos del rugby de élite.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#registro" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-bold rounded-lg text-white bg-rugger-green hover:bg-rugger-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-rugger-green transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Unirse a la lista de espera
+                        </a>
+                        <a href="https://tally.so/r/q4vjpO" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center px-8 py-4 border-2 border-gray-300 text-base font-bold rounded-lg text-gray-700 hover:border-gray-400 hover:bg-gray-50 focus:outline-none transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" class="w-5 h-5 mr-2"><path d="M192 0c-41.8 0-77.4 26.7-90.5 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H282.5C269.4 26.7 233.8 0 192 0zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM112 192H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            Rellenar encuesta (2 min)
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 pt-6 flex items-center justify-center text-sm text-gray-500">
+                        <span>Un proyecto impulsado en colaboración con</span>
+                        <a href="https://a5metrosrugby.com/" target="_blank" rel="noopener noreferrer" class="ml-2 font-bold text-rugger-green hover:text-rugger-dark hover:underline transition-colors flex items-center">
+                            A5 Metros Rugby 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-3 h-3 ml-1"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem / Solution Section -->
+        <div class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-display font-bold text-gray-900 sm:text-4xl">Deja de jugar por intuición</h2>
+                    <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+                        En un deporte de estrategia, la falta de herramientas convierte el análisis en debates subjetivos.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 bg-rugger-dark rounded-xl flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="w-8 h-8 text-rugger-lightgreen"><path d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4C417.8 217.4 432 259 432 304zm-208-8v-96c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v104c0 2.1 .8 4.2 2.3 5.7l64 64c3.1 3.1 8.2 3.1 11.3 0l11.3-11.3c3.1-3.1 3.1-8.2 0-11.3l-56.6-56.4z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">1. Registra en Directo</h3>
+                        <p class="text-gray-600">
+                            Interfaz limpia y sencilla optimizada para el ritmo del partido. Registra acciones clave con solo unos toques.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative transform md:-translate-y-4">
+                        <div class="absolute top-0 inset-x-0 h-1 bg-rugger-lightgreen rounded-t-2xl"></div>
+                        <div class="w-14 h-14 bg-rugger-green rounded-xl flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-8 h-8 text-white"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-9.5 0-17.7-6.2-20.9-15.1l111.4-159.2c13.7-19.6 40.5-23.7 59.5-9L278 300.9c13.1 10.1 31.7 8.5 43.1-3.8L477 141.2c12.1-13.1 11.3-33.5-1.8-45.6s-33.5-11.3-45.6 1.8L297.3 238.4l-48-36.9c-23.7-18.2-56.9-14-75.1 12.1L64 366.1V64z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">2. Analiza en Vivo</h3>
+                        <p class="text-gray-600">
+                            Estadísticas clave generadas automáticamente durante el partido. Domina la posesión, el territorio y ajusta la estrategia.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 bg-rugger-dark rounded-xl flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-8 h-8 text-rugger-lightgreen"><path d="M542.4 223c-7.2-41-37.4-74.8-77.2-86l-9.1-35.3c-1-4.1-4.7-6.8-8.9-6.8h-41c-4.2 0-7.9 2.7-8.9 6.8l-9.1 35.3c-39.7 11.2-69.9 45-77.2 86l-35.7-11.2c-3.9-1.2-8.2 .3-10.4 3.6L244.5 241c-2.3 3.3-2.3 7.8 0 11.1l20.4 29.5c-2.3 8.3-3.6 16.9-3.6 25.8s1.3 17.5 3.6 25.8L244.5 362.7c-2.3 3.3-2.3 7.8 0 11.1l20.4 29.5c2.2 3.2 6.5 4.8 10.4 3.6l35.7-11.2c7.3 41 37.5 74.8 77.2 86l9.1 35.3c1 4.1 4.7 6.8 8.9 6.8h41c4.2 0 7.9-2.7 8.9-6.8l9.1-35.3c39.8-11.2 70-45 77.2-86l35.7 11.2c3.9 1.2 8.2-.3 10.4-3.6l20.4-29.5c2.3-3.3 2.3-7.8 0-11.1l-20.4-29.5c2.3-8.3 3.6-16.9 3.6-25.8s-1.3-17.5-3.6-25.8l20.4-29.5c2.3-3.3 2.3-7.8 0-11.1l-20.4-29.5c-2.3-3.2-6.5-4.8-10.4-3.6L542.4 223zm-119.8 147c-34.1 0-61.7-27.6-61.7-61.7s27.6-61.7 61.7-61.7 61.7 27.6 61.7 61.7-27.6 61.7-61.7 61.7zm-271-92.4c-4.4-23.7-22-43.1-45-50l-5.6-21.7c-.6-2.5-2.8-4.2-5.4-4.2H66.1c-2.6 0-4.8 1.7-5.4 4.2l-5.6 21.7c-23.1 6.9-40.6 26.3-45 50l-21.6-6.4c-2.4-.7-5 .2-6.3 2.2L9.8 300.2c-1.4 2-1.4 4.7 0 6.7l12.4 17.7c-1.3 4.8-2 9.8-2 15s.7 10.2 2 15l-12.4 17.7c-1.4 2-1.4 4.7 0 6.7l12.4 17.7c1.3 2 3.9 2.9 6.3 2.2l21.6-6.4c4.4 23.7 22 43.1 45 50l5.6 21.7c.6 2.5 2.8 4.2 5.4 4.2h29.5c2.6 0 4.8-1.7 5.4-4.2l5.6-21.7c23.1-6.9 40.6-26.3 45-50l21.6 6.4c2.4 .7 5-.2 6.3-2.2l12.4-17.7c1.4-2 1.4-4.7 0-6.7l-12.4-17.7c1.3-4.8 2-9.8 2-15s-.7-10.2-2-15l12.4-17.7c1.4-2 1.4-4.7 0-6.7l-12.4-17.7c-1.3-2-3.9-2.9-6.3-2.2l-21.6 6.4zm-71.1 84.7c-19.8 0-35.8-16-35.8-35.8s16-35.8 35.8-35.8 35.8 16 35.8 35.8-16 35.8-35.8 35.8z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">3. Mejora Continua</h3>
+                        <p class="text-gray-600">
+                            Pasa del dato bruto al informe visual sin trabajo manual. Transforma las métricas en un plan de acción real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Validation / Stats -->
+        <div class="bg-rugger-dark py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-rugger-lightgreen">71%</p>
+                        <p class="mt-2 text-sm font-medium text-gray-300">Equipos M14/M16 sin captura de datos</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-rugger-lightgreen">90%</p>
+                        <p class="mt-2 text-sm font-medium text-gray-300">Clubes interesados en la herramienta</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-rugger-lightgreen">100%</p>
+                        <p class="mt-2 text-sm font-medium text-gray-300">Datos objetivos. Cero intuición.</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-rugger-lightgreen">80/20</p>
+                        <p class="mt-2 text-sm font-medium text-gray-300">80% del valor pro al 20% del coste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de Captación (CTA Principal) -->
+        <div id="registro" class="py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="px-6 py-12 sm:px-12 lg:px-16">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-display font-bold text-gray-900 mb-4">Co-crea la herramienta con nosotros</h2>
+                            <p class="text-gray-600">
+                                Apúntate a la lista de espera para participar en el piloto de la temporada 2026-27. Te enviaremos correos puntuales con la evolución del desarrollo. Cero spam.
+                            </p>
+                        </div>
+
+                        <!-- Estado: Éxito (Oculto por defecto, Formspree lo muestra) -->
+                        <div data-fs-success class="p-6 rounded-lg bg-green-50 text-green-800 text-lg text-center font-medium border border-green-200" style="display: none;">
+                            ¡Gracias por tu interés! Te hemos añadido a la lista y pronto tendrás noticias nuestras.
+                        </div>
+
+                        <!-- Estado: Error global (Oculto por defecto) -->
+                        <div data-fs-error class="mb-6 p-4 rounded-lg bg-red-50 text-red-800 text-sm text-center font-medium border border-red-200" style="display: none;">
+                            Hubo un error al procesar tu solicitud. Por favor, revisa los datos e inténtalo de nuevo.
+                        </div>
+                        
+                        <form id="leadForm" class="space-y-6">
+                            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                                    <input type="text" name="name" id="name" data-fs-field required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 focus:outline-none focus:ring-rugger-green focus:border-rugger-green bg-white">
+                                    <span data-fs-error="name" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                                <div>
+                                    <label for="club" class="block text-sm font-medium text-gray-700">Club / Equipo</label>
+                                    <input type="text" name="club" id="club" data-fs-field required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 focus:outline-none focus:ring-rugger-green focus:border-rugger-green bg-white">
+                                    <span data-fs-error="club" class="text-xs text-red-600 mt-1 block"></span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                                <input type="email" name="email" id="email" data-fs-field required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-3 px-4 focus:outline-none focus:ring-rugger-green focus:border-rugger-green bg-white">
+                                <span data-fs-error="email" class="text-xs text-red-600 mt-1 block"></span>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="rgpd" name="rgpd" type="checkbox" required class="focus:ring-rugger-green h-4 w-4 text-rugger-green border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="rgpd" class="font-medium text-gray-700">Acepto la política de privacidad</label>
+                                    <p class="text-gray-500 text-xs mt-1">Consiento el tratamiento de mis datos para recibir información sobre Rugger Match. (Cumplimiento RGPD).</p>
+                                </div>
+                            </div>
+
+                            <button type="submit" data-fs-submit-btn class="w-full flex justify-center items-center py-4 px-4 border border-transparent rounded-lg shadow-sm text-base font-bold text-white bg-rugger-green hover:bg-rugger-lightgreen focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rugger-green transition-colors disabled:opacity-75 disabled:cursor-not-allowed">
+                                Solicitar Acceso Anticipado
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-500 text-sm font-medium mb-4 md:mb-0">
+                &copy; 2026 Rugger Match.
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:ruggerstats@gmail.com" class="text-gray-400 hover:text-rugger-green transition-colors">
+                    <span class="sr-only">Email</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-6 h-6"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formspree SDK Initialization -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#leadForm', formId: 'xqpebbde' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
